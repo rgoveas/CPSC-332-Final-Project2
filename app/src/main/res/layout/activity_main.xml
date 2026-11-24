@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="false"
+    tools:context=".MainActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="386dp"
+        android:layout_height="721dp"
+        app:layout_anchor="@+id/constraintLayout"
+        app:layout_anchorGravity="center">
+
+        <!-- Logo banner at the top -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_logo_bg"
+            android:clipToOutline="true"
+            android:contentDescription="Aero Intelligence logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/aero_logo"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button32"
+            android:layout_width="157dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="1dp"
+            android:text="MARKETING SPECIFICATION"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button31"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="157dp"
+            android:layout_height="71dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="196dp"
+            android:text="RECORDS INSPECTION"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.636"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <Button
+            android:id="@+id/btnOpen"
+            android:layout_width="157dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="264dp"
+            android:layout_marginEnd="16dp"
+            android:text="EXECUTIVE SUMMARY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnOpenFragment_third"
+            android:layout_width="157dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="264dp"
+            android:text="AIRCRAFT IDENTIFICATION"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnOpenFragment_second"
+            android:layout_width="157dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="196dp"
+            android:text="TECHNICAL SPECIFICATION"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnOpenFragment_First"
+            android:layout_width="157dp"
+            android:layout_height="71dp"
+            android:text="PHYSICAL INSPECTION"
+            app:layout_constraintBottom_toBottomOf="@id/button32"
+            app:layout_constraintStart_toStartOf="@id/btnOpenFragment_second"
+            app:layout_constraintTop_toTopOf="@id/button32" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
